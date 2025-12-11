@@ -1,10 +1,6 @@
 import struct
-
 MAGIC = b"CCF1"
-
-COL_TYPE_INT32 = 0  # same as in writer
-
-
+COL_TYPE_INT32 = 0  
 def read_ccf(path: str):
     with open(path, "rb") as f:
         # 1) Magic
